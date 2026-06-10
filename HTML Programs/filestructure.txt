@@ -1,0 +1,15 @@
+Structure of a folder 
+
+1. Root directory - Main folder containing all website files
+
+2.HTML Files - Store main .HTML files at the Rootlevel for easy access
+
+3. CSS folder - Create a css folder for all cascading style sheets
+
+JS folder- For javascript files
+
+Images folder - store images
+
+Assests - others like fonts videos etc 
+
+Sub directory - for multi page website

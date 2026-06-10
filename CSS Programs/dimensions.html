@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and width</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+        #box1{
+            background-color: #1261ea;
+            text-align: center;
+        }
+        #box2{
+            background-color: #d71616;
+            text-align: end;
+        }
+        #box3{
+            background-color: #099158;
+        }
+
+        #logo{
+            height: 200px;
+            width: 400px;
+            background-image: url(path.webp);
+            /* kyuki image a dimension 200 by 400 se jyada hai isliye wo show nahi hogi thats why we will write the next line as : */
+            background-size: contain;
+            /* kyuki image square hai aur hamara box recatngle hai isiliye box me 2 images sho who rahi hai jiske liye ham karenge : */
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box One</div><br>
+    <div id="box2" class="box">Box Two</div><br>
+    <div id="box3" class="box">Box Three</div>
+    <div id="logo"></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Forms</title>
+</head>
+<body>
+    <!--
+    <form>
+        Username : <input type="text" placeholder="Username Daalo" required><br><br>
+        Password : <input type="password" placeholder="Password Daalo"><br><br>
+        <input type="submit" value="Jama Karein">
+
+         Aise karne se bss upar upar se data save hoga server me bhejne me errors aa sakti hai thats why we will use labels
+    </form>
+    -->
+    <form action="/server"> <!-- Data will be sent to named server-->
+        <label for="user">Username : </label> <!--for ki wajah se wo id uss object se link ho jayegi-->
+        <input type="text" id="user" placeholder="Username Daalo " required > <br>
+
+        <label for="secret">Password : </label>
+        <input type="password" id="secret" placeholder="Password Daalo"> <br>
+        Date : <input type="date"><br>
+        Color : <input type="color"><br>
+        Range : <input type="range"><br>
+        Button : <input type="button" value="Mujhe Chhuo"><br><hr>
+
+        <label for="male">Male : </label>
+        <input type="radio" id="male" name="gender" value="mard"><br>
+
+        <label for="female">Female : </label>
+        <input type="radio" id = "female" name="gender" value="naari"><br>
+
+        <label for="other">Others : </label>
+        <input type="radio" id = "other" name="gender" value="beech ke"><br><hr>
+
+        <!--If name -> same, then ek option choose kar sakte warna multiple option choose kar sakte kyuki name act as a container jo ki value lega either male, female or other-->
+
+        <label for="c">C : </label>
+        <input type="checkbox" name="lang" id="C Language"><br>
+        
+        <label for="java">Java : </label>
+        <input type="checkbox" name="lang" id="Java Language"><br>
+
+        <label for="python">Python : </label>
+        <input type="checkbox" name="lang" id="Python Language"><br><hr>
+
+        <label for="country">Mera Desh 🏳️</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="others">Others</option>
+        </select><br>
+
+        <textarea name="story" id="story" cols="30" rows="4"></textarea>
+
+         <hr>Files : <input type="file"><br><br>
+
+        <input type="submit" value= "Jama Karein">
+
+    </form>
+</body>
+</html>

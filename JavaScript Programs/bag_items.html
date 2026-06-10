@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag Items</title>
+<link rel="stylesheet" href="bag_items.css">
+</head>
+<body>
+  
+  <button class="add" onclick="cartvalue +=1; 
+  
+  document.querySelector('#text').innerHTML = `Your bag have ${cartvalue} items`;">Add to Cart</button>
+
+
+  <button class="remove" onclick="cartvalue -=1; 
+  
+  document.querySelector('#text').innerHTML = `Your bag have ${cartvalue} items`;">Remove from the cart</button>
+
+
+  <button class="add2" onclick="cartvalue +=2; 
+  
+  document.querySelector('#text').innerHTML = `Your bag have ${cartvalue} items`;">Add 1+1 sale items</button>
+
+  <h1 id="text"></h1>
+
+
+  <script>
+
+    let cartvalue = 0; //Used to define variable
+    document.querySelector('#text').innerText = `Your bag have ${cartvalue} items`;
+    // document me se text yani  heading ko select karke uske andar ke yani inner html ko chnage karke likh aki cart ki value ek number hai jo clicks se chnag ehogi ab same code ko saare buttons me paste karenge just by defining the actions
+
+  </script>
+</body>
+</html>

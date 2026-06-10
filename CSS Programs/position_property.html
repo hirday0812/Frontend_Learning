@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        margin: 10px;
+        padding: 0px;
+    }
+
+    #heading{
+        text-align: center;
+        font-family: "Black Ops One", system-ui;
+    }
+
+    .box{
+        height: 60px;
+        width: 60px;
+        background-color: green;
+        text-align: center;
+        border: 3px black solid;
+    }
+
+    #box1{
+        position: static; /*default rahega*/
+    }
+    
+    #box2{
+        position: relative;
+        /* agar changes karne ho position se */
+        top: 20px;
+        left: 50px;
+    }
+
+    #boxog2{
+        height: 60px;
+        width: 60px;
+        background-color: lime;
+        text-align: center;
+        border: 3px gray dashed;
+        position: relative;
+        bottom: 56px;
+        opacity: 20%;
+    }
+    #boxog3{
+        height: 60px;
+        width: 60px;
+        background-color: lime;
+        text-align: center;
+        border: 3px gray dashed;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        bottom: 56px;
+        opacity: 20%;
+    }
+
+    #box3{
+        position: absolute;
+        /* takes the box out of the page  
+        aur box ko top right corner ke reltively position dega*/
+        top: 400px;
+        right: 100px;
+    }
+
+    #box4{
+        position: fixed;
+        /* take the box out of the page and wo move nahi karega scroll karne par  */
+        top: 130px;
+    }
+
+</style>
+</head>
+<body>
+    <h2 id="heading">Scroll Karo aur maje looto</h2>
+
+    <div id="box1" class="box">Box 1 <br>Static</div>
+
+    <div id="box2" class="box">Box 2 <br>Relative</div>
+
+    <div id="boxog2">Originally Box2</div>
+
+    <div id="box3" class="box">Box 3 <br>Absolute</div>
+
+    <div id="boxog3">Originally Box3&4</div>
+
+    <div id="box4" class="box">Box 4 <br>Fixed</div>
+
+    
+</body>
+</html>

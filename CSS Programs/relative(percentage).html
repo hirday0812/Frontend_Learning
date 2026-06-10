@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-size: 30px;
+        }
+        #First{
+            height: 300px;
+            width: 400px;
+            background-color: red;
+            font-size: 25px;
+        }
+        #second{
+            height: 50%;
+            width: 60%; /*Percentage is relative to parent*/
+            background-color: royalblue;
+            font-size: 0.75em;
+            /* em is how much times the font will grow */
+        }
+        #third{
+            height: 30%;
+            width: 40%; /*Percentage is relative to parent*/
+            background-color: yellow;
+            font-size: 1.0rem;
+            /* rem is related to the root parent (here body i.e. *)  */
+        }
+        #fourth{
+            height: 50vh;
+            width: 50vw; /*vh and vw is relative to the whole viewport not any parent i.e. 50 50% of the whole page*/
+            background-color: green;
+            font-size: 1.0rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="First">
+        First
+        <div id="second">
+            Second
+            <div id="third">
+                Third
+            </div>
+        </div>
+    </div>
+    <div id="fourth">
+        Fourth
+    </div>
+    
+</body>
+</html>

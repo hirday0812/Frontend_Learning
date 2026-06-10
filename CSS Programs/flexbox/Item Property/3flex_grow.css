@@ -1,0 +1,38 @@
+*{
+    margin-left: 0px;
+    padding: 0px;
+}
+.box{
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    margin-right: 10px;
+}
+#box1{background-color: aqua;}
+
+#box2{
+    background-color:cornflowerblue ;
+    
+}
+
+#box3{background-color:chocolate;}
+
+#box4{
+    background-color:chartreuse;
+    flex-grow: 1;
+}
+
+#box5{background-color: darkorange;}
+
+#container1{
+    border: 2px solid;
+    height: 700px;
+    width: 700px;
+    background-color: lavender;
+    margin: 20px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+
+}

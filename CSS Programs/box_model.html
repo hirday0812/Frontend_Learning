@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .padded{
+            height: 100px;
+            width: 50px;
+            padding: 5px 10px 15px 20px;
+
+        }
+        #First{
+            margin: 5px 11px 16px 21px;
+            /* top right bottom left 
+            here, 16px is the bottom margin*/
+            background-color: slateblue;
+            border: 3px dashed black;
+            border-radius: 5px 50px 5px 50px;
+            /* gives the curve */
+        }
+        #second{
+            margin: 50px 11px 16px 21px;
+            /* 50px is the top margin isse jiski bhi value jyda hogi utna gap dono ke bich me hoga */
+            background-color :cornflowerblue;
+        }
+        /* margin is used to seperate two tags from each other */
+    </style>
+</head>
+<body>
+    <div id="First" class="padded">First</div>
+    <div id="second" class="padded">Second</div>
+</body>
+</html>
