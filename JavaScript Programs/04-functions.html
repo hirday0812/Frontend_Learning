@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Functions
+
+  </title>
+</head>
+<body>
+  
+
+  <script>
+
+    // check either odd or even
+    function oddOrEven(num){
+      if(num%2 == 0){
+        return `The number ${num} is even`;
+      }
+      else{
+        return `The number ${num} is odd`;
+      }
+    }
+
+    
+    
+    // Larger of two numbers
+    function larger(x,y){
+      if(x > y){
+        return `${x} is greater than ${y}`;
+      }
+      else if(x < y){
+        return `${x} is smaller than ${y}`;
+      }
+      else{
+        return `Both numbers are equal`;
+      }
+        
+    }
+
+    // convert to farenhite
+    function tofaren(n){
+      f = (n*9/5) + 32;
+      return `${n} degree celcius is ${f}F`;
+    }
+        
+  console.log(oddOrEven(5));
+  console.log(oddOrEven(87816380));
+
+  console.log(larger(4,5));
+  console.log(larger(5,5));
+  console.log(larger(823,5));
+  
+  console.log(tofaren(0));
+  console.log(tofaren(35));
+
+
+  
+  </script>
+</body>
+</html>
