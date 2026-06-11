@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket game using functions</title>
+
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+<!-- improved the game by using object to show score -->
+
+  <button onclick="
+  
+  computerChoice = generateComputerChoice();
+  resultmsg = getResult(`Bat` , computerChoice);
+  showResult(`Bat` , computerChoice , resultmsg);
+  
+  ">Bat</button>
+
+
+
+  <button onclick="
+  
+  computerChoice = generateComputerChoice();
+  resultmsg = getResult(`Ball` , computerChoice);
+  showResult(`Ball` , computerChoice , resultmsg);
+  
+  ">Ball</button>
+
+
+
+  
+  <button onclick="
+  
+  computerChoice = generateComputerChoice();
+  resultmsg = getResult(`Stump` , computerChoice);
+  showResult(`Stump` , computerChoice , resultmsg);
+
+  ">Stump</button>
+
+  <!-- #4 adding reset button -->
+   <button onclick="localStorage.clear()
+      resetScore();
+   ">Reset</button>
+
+
+<script>
+
+  // #2: to getch the data of score
+  let scoreStr = localStorage.getItem('Score');
+  let score;
+  resetScore(scoreStr);
+
+  // #3:agar score ki kuch bhi value hai to usko object me convert karna warna let it be 0 0 0
+  function resetScore(scoreStr){
+    score = scoreStr ? JSON.parse(scoreStr) : {
+        win : 0,
+        lose : 0,
+        tie : 0,
+    };
+        
+    score.displayScore = function(){
+      return `Won : ${this.win} Lose : ${this.lose} Tie : ${this.tie}`;
+    };
+      showResult();
+
+  }
+
+  function generateComputerChoice(){
+  let randomNumber = Math.random() * 3; //Generates a random number between 0 and 3
+  
+  if(randomNumber > 0 && randomNumber <= 1){
+    return `Bat`;
+  }
+  else if(randomNumber > 1 && randomNumber <= 2){
+    return `Ball`;
+  }
+  else{
+    return `Stump`;
+  }
+  }
+
+  function getResult(user , computer){
+    if(user === `Bat`){
+      if(computer === `Bat`){
+        score.tie++;
+        return `It's a tie`;
+      }
+      else if(computer=== `Ball`){
+        score.win++;
+        return `User won`;
+      }
+      else{
+        score.lose++;
+        return `Computer Won`;
+      }
+    }
+
+
+    else if(user === `Ball`){
+      if(computer === `Bat`){
+        score.lose++;
+        return `Computer Won`;
+      }
+      else if(computer === `Ball`){
+        score.tie++;
+        return `It's a tie`;
+      }
+      else{
+        score.win++;
+        return `User Won`;
+      }
+    }
+
+
+    else{
+      
+      if(computer === `Bat`){
+        score.win++;
+        return `User Won`;
+      }
+      else if(computer === `Ball`){
+        score.lose++;
+        return `Computer Won`;
+      }
+      else{
+        score.tie++;
+        return `It's a tie`;
+      }
+    }
+  }
+
+
+  function showResult(user , computer , result){
+    // #1 : to save the score in the storage(not in thw website)
+    localStorage.setItem('Score' , JSON.stringify(score)); 
+
+    alert(`You have chosen ${user} , The computer chooses ${computer} 
+    
+    ${result}
+    
+    ${score.displayScore()}`);
+  }
+
+
+</script>
+</body>
+</html>

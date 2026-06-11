@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object and Autoboxing</title>
+</head>
+<body>
+  
+
+  <script>
+    //objects are used for encapsulation hehe
+
+    let product = {
+      'item-name' : 'T-shirt' ,
+      company : 'Mango' ,
+      price : 527 ,
+
+      displayPrice : function(){
+        console.log(`The price is ${this.price}`); // function inside object
+      },
+
+      rating : {
+        stars : 8.5,
+        review : 79, // object inside object
+      }
+    };
+
+    // printing the object
+    console.log(product);
+    //accessing the object 
+    console.log(product.company);
+    // accessing using []
+    console.log(product['price']);
+
+    //benefit of using []
+    let userinput = 'item-name';
+    console.log(product[userinput]);
+
+    //deleting a key value
+    delete product.company;
+    console.log(product);
+
+
+    product.displayPrice();
+    console.log(product.rating.review);
+
+
+    //Autoboxing is used to convert primitves into objects
+    console.log((`hello me am this this`.replace(`me` , `i`).toUpperCase()));
+
+
+
+    let x =5;
+    let y = x;
+    console.log(`x=${x} y=${y}`);
+    x = 8;
+    console.log(`x=${x} y=${y}`); // y will not change as x and y do alag alag copies hai
+
+    let p = {num : 6};
+    let q = p;
+    console.log(`p=${p.num} q=${q.num}`);
+    p.num = 10;
+    console.log(`p=${p.num} q=${q.num}`); // p and q both will as p and q object nahi hai wo just object ko reference dete hai
+
+    let a = {hello:`xyz`};
+    let b = {hello:`xyz`};
+
+    console.log(a == b);
+    console.log(a === b);
+
+    //destructuring : agar usi name ke variable ko bahar use karna hai to
+    let product1 = {
+      'item-name' : 'T-shirt' ,
+      company : 'Mango' ,
+      price : 527 ,}
+
+    let {company , price } = product1;
+    console.log(company , price); // dot nahi lagana pada 
+
+  </script>
+</body>
+</html>

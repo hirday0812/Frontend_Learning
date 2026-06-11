@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket game using functions</title>
+
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+<!-- improved the game by using functions -->
+
+  <button onclick="
+  
+  computerChoice = generateComputerChoice();
+  resultmsg = getResult(`Bat` , computerChoice);
+  showResult(`Bat` , computerChoice , resultmsg);
+  
+  ">Bat</button>
+
+
+
+  <button onclick="
+  
+  computerChoice = generateComputerChoice();
+  resultmsg = getResult(`Ball` , computerChoice);
+  showResult(`Ball` , computerChoice , resultmsg);
+  
+  ">Ball</button>
+
+
+
+  
+  <button onclick="
+  
+  computerChoice = generateComputerChoice();
+  resultmsg = getResult(`Stump` , computerChoice);
+  showResult(`Stump` , computerChoice , resultmsg);
+
+  ">Stump</button>
+
+
+<script>
+  function generateComputerChoice(){
+  let randomNumber = Math.random() * 3; //Generates a random number between 0 and 3
+  
+  if(randomNumber > 0 && randomNumber <= 1){
+    return `Bat`;
+  }
+  else if(randomNumber > 1 && randomNumber <= 2){
+    return `Ball`;
+  }
+  else{
+    return `Stump`;
+  }
+  }
+
+  function getResult(user , computer){
+    if(user === `Bat`){
+      if(computer === `Bat`){
+        return `It's a tie`;
+      }
+      else if(computer=== `Ball`){
+        return `User won`;
+      }
+      else{
+        return `Computer Won`;
+      }
+    }
+
+
+    else if(user === `Ball`){
+      if(computer === `Bat`){
+        return `Computer Won`;
+      }
+      else if(computer === `Ball`){
+        return `It's a tie`;
+      }
+      else{
+        return `User Won`;
+      }
+    }
+
+
+    else{
+      
+      if(computer === `Bat`){
+        return `User Won`;
+      }
+      else if(computer === `Ball`){
+        return `Computer Won`;
+      }
+      else{
+        return `It's a tie`;
+      }
+    }
+  }
+
+
+  function showResult(user , computer , result){
+    alert(`You have chosen ${user} , The computer chooses ${computer} and ${result}`);
+  }
+
+</script>
+</body>
+</html>

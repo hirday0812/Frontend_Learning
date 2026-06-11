@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON and Local Storage</title>
+</head>
+<body>
+  <script>
+    // JSON is JavaScript Object Notation which stores the object as a string so it is easy to transfer and store
+    let product = {
+      name : 'T-shirt' ,
+      company : 'Mango' ,
+      price : 527 ,
+      rating : {
+        stars : 8.5,
+        review : 79,
+      }
+    };
+
+    console.log(typeof product);
+    console.log(product);
+
+    let str = JSON.stringify(product); //it will convert object into string
+    console.log(typeof str);
+    console.log(str);
+
+    let product1 = JSON.parse(str); //used to convert string into object
+    console.log(typeof product1);
+    console.log(product1);
+
+
+
+
+    //JSON is used to store object into local storage of browser by keyvalue pairs
+    localStorage.setItem('name', 'hello');
+    localStorage.setItem('product', str);
+
+    console.log(localStorage.getItem('product')); // used to display the data based on the key
+    // localStorage.removeItem('key');
+    // localStorage.clear();
+
+  </script>
+</body>
+</html>
