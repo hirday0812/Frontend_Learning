@@ -7,7 +7,7 @@ This repository contains my frontend development learning progress, practice exe
 - HTML
 - CSS
 - JavaScript
-- React (Upcoming)
+- React
 
 ## Repository Structure
 
