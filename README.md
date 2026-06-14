@@ -48,9 +48,10 @@ Frontend/
 
 ## Projects
 
-- Calculator (In Progress)
-
-More projects will be added as I continue learning.
+- Calculator 
+- Cricket Game
+- ToDo List
+- Myntra Working Clone
 
 ## Goal
 
