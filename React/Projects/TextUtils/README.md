@@ -20,3 +20,5 @@ Feature 1 Done - Added a working button
 14- Used Ternary operators in Textarea to change the color of background
 Feature 2 Done - Added Dark Mode
 
+15- Added About Us
+
