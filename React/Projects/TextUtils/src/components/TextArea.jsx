@@ -16,14 +16,20 @@ export default function TextArea(props) {
     let newText = text.toLowerCase();
     setText(newText);
   };
-  
+
   const handleClearClick = () => {
     let newText = "";
     setText(newText);
   };
   return (
     <>
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          backgroundColor: props.mode === "light" ? "white" : "#001627",
+          color: props.mode === "light" ? "black" : "white",
+        }}
+      >
         <h1>{props.heading}</h1>
         <div className="mb-3">
           <textarea
@@ -32,6 +38,10 @@ export default function TextArea(props) {
             onChange={handleOnChange}
             value={text}
             rows="8"
+            style={{
+              backgroundColor: props.mode === "light" ? "white" : "#022947",
+              color: props.mode === "light" ? "black" : "white",
+            }}
           ></textarea>
 
           <button
@@ -60,13 +70,19 @@ export default function TextArea(props) {
         </div>
       </div>
 
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          backgroundColor: props.mode === "light" ? "white" : "#001627",
+          color: props.mode === "light" ? "black" : "white",
+        }}
+      >
         <h2>Your Text Summary</h2>
         <p>
           {text.split(" ").length} words and {text.length} characters
         </p>
         <h2>Preview</h2>
-        <p>{text}</p>
+        <p>{text.length >0 ? text : "Enter text to preview it here"}</p>
       </div>
     </>
   );

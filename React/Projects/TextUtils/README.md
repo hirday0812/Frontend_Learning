@@ -9,9 +9,14 @@
 6- Added a button from bootstrap
 7- Used usestate, Added onclick and onchange functions to the text input
 8- In onclick button, added a logic to chnage the text to uppercase
-Feature 1 Done 
+Feature 1 Done - Added a working button 
 
 9- Added count of words and letters using text state
 10- Added Preview and Lowercase functional button
 
 11- Added(not used) a component About which feature dark mode
+12- Chnaged every theme of navbar to props.mode
+13- Made a function in App that will toggle dark mode and wrote the logic accordingly
+14- Used Ternary operators in Textarea to change the color of background
+Feature 2 Done - Added Dark Mode
+
