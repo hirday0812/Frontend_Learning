@@ -5,7 +5,7 @@ const Navbar = (props) => {
     // copy pasted from bootstrap directly
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" herf="/">
+        <a className="navbar-brand" herf="#">
           {props.title}
         </a>
         <button
@@ -22,12 +22,12 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" herf="/">
+              <a className="nav-link active" aria-current="page" herf="#">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" herf="/">
+              <a className="nav-link" herf="#">
                 {props.aboutText}
               </a>
             </li>

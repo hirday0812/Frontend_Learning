@@ -9,3 +9,9 @@
 6- Added a button from bootstrap
 7- Used usestate, Added onclick and onchange functions to the text input
 8- In onclick button, added a logic to chnage the text to uppercase
+Feature 1 Done 
+
+9- Added count of words and letters using text state
+10- Added Preview and Lowercase functional button
+
+11- Added(not used) a component About which feature dark mode
