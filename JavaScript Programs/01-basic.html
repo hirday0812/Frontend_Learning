@@ -1,40 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Basic JavaScript</title>
+  <head>
+    <title>Basic JavaScript</title>
 
-  <style>
-    #buttuu{
-      height: 50px;
-      width: 200px;
-      font-size: 110%;
-    }
-  </style>
-</head>
-<body>
-  <h1>Open Console in this window</h1>
-  <button id="buttuu" class="butt"
-  onclick="alert(`mujhe chhua kaise`)">
-  <!-- onclick likhne se apan button ko javascript ka code de payenge -->
-  Mujhe Chhuo
-  </button>
+    <style>
+      #buttuu {
+        height: 50px;
+        width: 200px;
+        font-size: 110%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Open Console in this window</h1>
+    <button id="buttuu" class="butt" onclick="alert(`mujhe chhua kaise`)">
+      <!-- onclick likhne se apan button ko javascript ka code de payenge === -->
+      Mujhe Chhuo
+    </button>
 
+    <script>
+      // console.log() is used to show message inside the console in the website
+      console.log(`Hello There`);
+      console.log(0.1 + 0.2);
+      console.log(console.warn(`Warning likha `));
+      console.log(console.error(`Error Likha`));
 
+      // Query Seectors
+      console.log(document.getElementById("buttuu"));
+      console.log(document.getElementsByClassName("butt"));
 
-
-  <script>
-    // console.log() is used to show message inside the console in the website 
-    console.log(`Hello There`);
-    console.log(0.1 + 0.2);
-    console.log(console.warn(`Warning likha `));
-    console.log(console.error(`Error Likha`));
-
-    // Query Seectors
-   console.log(document.getElementById('buttuu'));
-   console.log(document.getElementsByClassName('butt'));
-
-   console.log(document.querySelector('#buttuu'));
-   console.log(document.querySelectorAll('.butt'));
-  </script>
-</body>
+      console.log(document.querySelector("#buttuu"));
+      console.log(document.querySelectorAll(".butt"));
+    </script>
+  </body>
 </html>

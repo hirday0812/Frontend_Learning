@@ -1,153 +1,153 @@
-#box1{
-            height: 100px;
-            width: 100px;
-            background-color: lavender;
-            margin: 50px;
-            border: 2px solid;
-            transition-property: all;
-            transition: all 1s ease-in-out;
-        }
-        #box1:hover{
-            transform: rotate(180deg);
-        }
+#box1 {
+  height: 100px;
+  width: 100px;
+  background-color: lavender;
+  margin: 50px;
+  border: 2px solid;
+  transition-property: all;
+  transition: all 1s ease-in-out;
+}
+#box1:hover {
+  transform: rotate(180deg);
+}
 
-        #box2{
-            height: 100px;
-            width: 100px;
-            background-color: lavender;
-            margin: 50px;
-            border: 2px solid;
-            position: relative;
-            left: 150px;
-            bottom: 153px;
-            transition-property:all;
-            transition: all 1s ease-in-out;
-        }
-        #box2:hover{
-            transform: rotatex(180deg);
-        }
+#box2 {
+  height: 100px;
+  width: 100px;
+  background-color: lavender;
+  margin: 50px;
+  border: 2px solid;
+  position: relative;
+  left: 150px;
+  bottom: 153px;
+  transition-property: all;
+  transition: all 1s ease-in-out;
+}
+#box2:hover {
+  transform: rotatex(180deg);
+}
 
-        #box3{
-            height: 100px;
-            width: 100px;
-            background-color: lavender;
-            margin: 50px;
-            border: 2px solid;
-            position: relative;
-            left: 300px;
-            bottom: 304px;
-            transition-property: all;
-            transition: all 1s ease-in-out;
-        }
-        #box3:hover{
-            transform: rotatey(180deg);
-        }
+#box3 {
+  height: 100px;
+  width: 100px;
+  background-color: lavender;
+  margin: 50px;
+  border: 2px solid;
+  position: relative;
+  left: 300px;
+  bottom: 304px;
+  transition-property: all;
+  transition: all 1s ease-in-out;
+}
+#box3:hover {
+  transform: rotatey(180deg);
+}
 
-        #box4{
-            height: 100px;
-            width: 100px;
-            background-color:aquamarine;
-            margin: 50px;
-            border: 2px solid;
-            position: relative;
-            bottom: 304px;
-            transition-property: all;
-            transition: all 200ms ease-in-out;
-        }
-        #box5{
-            height: 100px;
-            width: 100px;
-            background-color:aquamarine;
-            margin: 50px;
-            border: 2px solid;
-            position: relative;
-            left: 150px;
-            bottom: 455px;
-            transition-property: all;
-            transition: all 200ms ease-in-out;
-        }
-        #box6{
-            height: 100px;
-            width: 100px;
-            background-color:aquamarine;
-            margin: 50px;
-            border: 2px solid;
-            position: relative;
-            left: 300px;
-            bottom: 607px;
-            transition-property: all;
-            transition: all 200ms ease-in-out;
-        }
-    #box4:hover{
-        transform: scale(2);
-    }
-    #box5:hover{
-        transform: scaleX(2);
-    }
-    #box6:hover{
-        transform: scaleY(2);
-    }
-    
-    #box7{
-            height: 100px;
-            width: 100px;
-            background-color:chartreuse;
-            margin: 50px;
-            border: 2px solid;
-            position: relative;
-            bottom: 607px;
-            transition-property: all;
-            transition: all 200ms  ;
-        }
+#box4 {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  margin: 50px;
+  border: 2px solid;
+  position: relative;
+  bottom: 304px;
+  transition-property: all;
+  transition: all 200ms ease-in-out;
+}
+#box5 {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  margin: 50px;
+  border: 2px solid;
+  position: relative;
+  left: 150px;
+  bottom: 455px;
+  transition-property: all;
+  transition: all 200ms ease-in-out;
+}
+#box6 {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  margin: 50px;
+  border: 2px solid;
+  position: relative;
+  left: 300px;
+  bottom: 607px;
+  transition-property: all;
+  transition: all 200ms ease-in-out;
+}
+#box4:hover {
+  transform: scale(2);
+}
+#box5:hover {
+  transform: scaleX(2);
+}
+#box6:hover {
+  transform: scaleY(2);
+}
 
-        #box8{
-            height: 100px;
-            width: 100px;
-            background-color:chartreuse;
-            margin: 50px;
-            border: 2px solid;
-            position: relative;
-            left: 150px;
-            bottom: 760px;
-            transition-property: all;
-            transition: all 200ms;
-        }
+#box7 {
+  height: 100px;
+  width: 100px;
+  background-color: chartreuse;
+  margin: 50px;
+  border: 2px solid;
+  position: relative;
+  bottom: 607px;
+  transition-property: all;
+  transition: all 200ms;
+}
 
-        #box9{
-            height: 100px;
-            width: 100px;
-            background-color:chartreuse;
-            margin: 50px;
-            border: 2px solid;
-            position: relative;
-            left: 300px;
-            bottom: 913px;
-            transition-property: all;
-            transition: all 200ms ;
-        }
+#box8 {
+  height: 100px;
+  width: 100px;
+  background-color: chartreuse;
+  margin: 50px;
+  border: 2px solid;
+  position: relative;
+  left: 150px;
+  bottom: 760px;
+  transition-property: all;
+  transition: all 200ms;
+}
 
-        #box7:hover{
-            transform: translate(50px);
-        }
-        #box8:hover{
-            transform: translate(50px,50px);
-        }
-        #box9:hover{
-            transform: translateY(50px);
-        }
+#box9 {
+  height: 100px;
+  width: 100px;
+  background-color: chartreuse;
+  margin: 50px;
+  border: 2px solid;
+  position: relative;
+  left: 300px;
+  bottom: 913px;
+  transition-property: all;
+  transition: all 200ms;
+}
 
-        #box10{
-            height: 100px;
-            width: 100px;
-            background-color:cornflowerblue;
-            margin: 50px;
-            border: 2px solid;
-            position: relative;
-            left: 450px;
-            bottom: 1065px;
-            transition-property: all;
-            transition: all 200ms ;
-        }
-        #box10:hover{
-            transform: skew(45deg);
-        }
+#box7:hover {
+  transform: translate(50px);
+}
+#box8:hover {
+  transform: translate(50px, 50px);
+}
+#box9:hover {
+  transform: translateY(50px);
+}
+
+#box10 {
+  height: 100px;
+  width: 100px;
+  background-color: cornflowerblue;
+  margin: 50px;
+  border: 2px solid;
+  position: relative;
+  left: 450px;
+  bottom: 1065px;
+  transition-property: all;
+  transition: all 200ms;
+}
+#box10:hover {
+  transform: skew(45deg);
+}
